@@ -8,7 +8,7 @@
 //     inputs.forEach(input => input.addEventListener('change', handleUpdate));
 //     inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
 const video = document.getElementById("myVideo")
-const playbtn = document.getElementById("toggle");
+const playbtn = document.querySelector(".toggle");
 const playbackSpeed  = document.getElementById("playbackSpeed ");
 const volume = document.getElementById("volume");
 const progressContainer = document.querySelector(".progress_container");
@@ -62,6 +62,8 @@ video.ontimeupdate =()=>{
      console.log(progress.style.width,currWidth)
 }
 video.onprogress=(e)=>{
+	if(video.buffered.length===0||!video.duration)
+		return;
    let curr = (video.buffered.end(video.buffered.length-1)/video.duration)*100;
 	buffer.style.width=`${curr}%`;
 }
