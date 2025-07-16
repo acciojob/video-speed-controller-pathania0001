@@ -7,20 +7,20 @@
 	border-radius:10px;
 	border:1px solid;
 	margin:4px 0;
-	background-color:red;
+	background-color:#e0e0e0;
 	position:relative;
 }
 .progress_filled{
     width:0%;
 	height:100%;
-	background:blue;
+	background:#1e90ff;
 	position:absolute;
 }
 
 .buffer{
 	width:0%;
 	height:100%;
-	background-color:yellow;
+	background-color:#a0c4ff;
 	position:absolute;
 }
 
