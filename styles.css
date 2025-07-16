@@ -1,2 +1,44 @@
 
 /* Your CSS Code here. */
+
+.progress_container{
+	width:100%;
+	height:5px;
+	border-radius:10px;
+	border:1px solid;
+	margin:4px 0;
+	background-color:red;
+	position:relative;
+}
+.progress_filled{
+    width:0%;
+	height:100%;
+	background:blue;
+	position:absolute;
+}
+
+.buffer{
+	width:0%;
+	height:100%;
+	background-color:yellow;
+	position:absolute;
+}
+
+.bars{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	gap:20px;
+	margin:20px
+}
+.player_button{
+	display:flex;
+	justify-content:center;
+	gap:20px;
+}
+.skip{
+  display:flex;
+  justify-content:center;
+	gap:20px;
+	margin:10px 0;
+}
