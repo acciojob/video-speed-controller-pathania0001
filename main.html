@@ -8,11 +8,11 @@
 <body>
 
   <div class="wrapper">
-    <video class="flex" id="myVideo" width="765" height="430" src="https://ia800207.us.archive.org/15/items/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" controls></video>
+    <video class="flex .player__video" id="myVideo" width="765" height="430" src="https://ia800207.us.archive.org/15/items/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" controls></video>
 
 	  <div class="progress_container">
 	  <div class="buffer"></div>
-	  <div class="progress_filled"></div>
+	  <div class="progress__filled"></div>
 	  </div>
 	 <div  class="bars">
 	  <div class="speed"><span>Speed</span>
@@ -22,11 +22,11 @@
       <div class="volume_bar"><input type="range" id="volume" name="volume" min="0" max="1" step="0.1" value="0.75"></div>
     </div>
 </div>
-	  <div class="player_button"><span>Play/Pause : </span>
+	  <div class="player__button"><span>Play/Pause : </span>
 		  <button class="toggle"  name="toggle">►</button>
 	  </div>
 	  <div class="skip">
-		  <button  id="back10">« 10s</button>
+		  <button class="rewind" id="back10">« 10s</button>
 		  <button id="for25">25s »</button>
 	  </div>
 	  
